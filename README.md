@@ -1,2 +1,1 @@
-# .github
-CodeX Protocol: The AI-powered universal compute layer for Sei. Turn natural language into dApps, all powered by a decentralized compute grid.
+Veritas Protocol is a verifiable judgment stack for prediction markets and governance outcomes. It combines adversarial AI reasoning, symbolic verification, and on-chain dispute economics so that outcomes are challengeable, auditable, and reproducible.
