@@ -15,6 +15,17 @@ Our focus is straightforward:
 - On-chain dispute and settlement contracts for transparent resolution.
 - Operator and user interfaces for market operations and verification visibility.
 
+## Verified Deployments
+
+Veritas V2 core contracts are deployed and verified on BSC Testnet (Chain ID 97):
+
+- **VeritasToken**: [`0x07F608AFf6d63b68029488b726d895c4Bb593038`](https://testnet.bscscan.com/address/0x07F608AFf6d63b68029488b726d895c4Bb593038#code)
+- **VeritasOracleV2**: [`0xBE231B798821f11c09051851683301F428fe9305`](https://testnet.bscscan.com/address/0xBE231B798821f11c09051851683301F428fe9305#code)
+- **VeritasDVMV2**: [`0xEa5231b0dF43c04d9D38020B89bde22644F74B0A`](https://testnet.bscscan.com/address/0xEa5231b0dF43c04d9D38020B89bde22644F74B0A#code)
+- **VeritasReputationV2**: [`0x0D2B4193e78107678a5aC29d795e0EcD361aE3A7`](https://testnet.bscscan.com/address/0x0D2B4193e78107678a5aC29d795e0EcD361aE3A7#code)
+- **VeritasGuardian**: [`0xEA857fD26a976AB8F0aAd5e006b5FEfaF0F30c9B`](https://testnet.bscscan.com/address/0xEA857fD26a976AB8F0aAd5e006b5FEfaF0F30c9B#code)
+- **VeritasFactoryV2**: [`0xB5d29EA1E2e90A24D6506E2a6a269506a12974CC`](https://testnet.bscscan.com/address/0xB5d29EA1E2e90A24D6506E2a6a269506a12974CC#code)
+
 ## Deprecation Notice
 
 - The FastAPI `backend` package is deprecated and retained for historical/reference purposes.
@@ -52,6 +63,16 @@ flowchart TB
 
 - BSC Testnet for deployment and protocol iteration.
 - opBNB-compatible architecture for high-throughput usage.
+
+## End-to-End Flow
+
+1. Market is created and metadata is ingested.
+2. AI engine transforms question, gathers sources, and computes trust scores.
+3. Proposer/challenger/supervisor generate and arbitrate a resolution package.
+4. Z3 checks symbolic consistency of reasoning steps.
+5. Step hashes and evidence hashes are produced for settlement traceability.
+6. Contracts receive outcome proposal and enable bounded dispute windows.
+7. Frontend and gateway surface status, disputes, and verification evidence.
 
 ## Engineering Principles
 
